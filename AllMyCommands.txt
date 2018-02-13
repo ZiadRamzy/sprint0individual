@@ -1,0 +1,167 @@
+C:\Users\Ziad>cd desktop
+
+C:\Users\Ziad\Desktop>git clone https://github.com/ZiadRamzy/sprint0individual.git
+Cloning into 'sprint0individual'...
+warning: You appear to have cloned an empty repository.
+
+C:\Users\Ziad\Desktop>cd sprint0individual
+
+C:\Users\Ziad\Desktop\sprint0individual>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        first.txt
+        second.txt
+        third.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Ziad\Desktop\sprint0individual>git add first.txt
+
+C:\Users\Ziad\Desktop\sprint0individual>git add second.txt
+
+C:\Users\Ziad\Desktop\sprint0individual>git add third.txt
+
+C:\Users\Ziad\Desktop\sprint0individual>git rm second.txt --cached
+rm 'second.txt'
+
+C:\Users\Ziad\Desktop\sprint0individual>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   first.txt
+        new file:   third.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        second.txt
+
+
+C:\Users\Ziad\Desktop\sprint0individual>git add second.txt
+
+C:\Users\Ziad\Desktop\sprint0individual>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   first.txt
+        new file:   second.txt
+        new file:   third.txt
+
+
+C:\Users\Ziad\Desktop\sprint0individual>git commit -m "i commited my changes"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Ziad@Ziad.(none)')
+
+C:\Users\Ziad\Desktop\sprint0individual>git config --global user.email "ziad.ahmed@student.guc.edu.eg"
+
+C:\Users\Ziad\Desktop\sprint0individual>git config --global user.name "ziad"
+
+C:\Users\Ziad\Desktop\sprint0individual>git commit -m "i commited my changes"
+[master (root-commit) a974b32] i commited my changes
+ 3 files changed, 31 insertions(+)
+ create mode 100644 first.txt
+ create mode 100644 second.txt
+ create mode 100644 third.txt
+
+C:\Users\Ziad\Desktop\sprint0individual>git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.51 KiB | 220.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/ZiadRamzy/sprint0individual.git
+ * [new branch]      master -> master
+
+C:\Users\Ziad\Desktop\sprint0individual>git checkout -b ReadMe
+Switched to a new branch 'ReadMe'
+
+C:\Users\Ziad\Desktop\sprint0individual>git branch ReadMe
+fatal: A branch named 'ReadMe' already exists.
+
+C:\Users\Ziad\Desktop\sprint0individual>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+C:\Users\Ziad\Desktop\sprint0individual>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+C:\Users\Ziad\Desktop\sprint0individual>git status
+On branch ReadMe
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Ziad\Desktop\sprint0individual>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+C:\Users\Ziad\Desktop\sprint0individual>git status
+On branch ReadMe
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Ziad\Desktop\sprint0individual>git status
+On branch ReadMe
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Ziad\Desktop\sprint0individual>git add README.md
+
+C:\Users\Ziad\Desktop\sprint0individual>git commit -m "added readme file"
+[ReadMe 4b9df89] added readme file
+ 1 file changed, 6 insertions(+)
+ create mode 100644 README.md
+
+C:\Users\Ziad\Desktop\sprint0individual>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\Ziad\Desktop\sprint0individual>git merge ReadMe
+Updating a974b32..4b9df89
+Fast-forward
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 README.md
+
+C:\Users\Ziad\Desktop\sprint0individual>git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 631 bytes | 210.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ZiadRamzy/sprint0individual.git
+   a974b32..4b9df89  master -> master
+
+C:\Users\Ziad\Desktop\sprint0individual>
